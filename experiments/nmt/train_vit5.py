@@ -1,0 +1,16 @@
+import argparse, os, sys, subprocess
+p=argparse.ArgumentParser()
+p.add_argument("--csv",type=str,default="data/bitext/tay_vi.csv")
+p.add_argument("--out",type=str,default="runs/train_vit5")
+p.add_argument("--epochs",type=int,default=6)
+p.add_argument("--lr",type=float,default=2e-5)
+p.add_argument("--warmup",type=float,default=0.1)
+p.add_argument("--grad_accum",type=int,default=8)
+p.add_argument("--train_bs",type=int,default=1)
+p.add_argument("--eval_bs",type=int,default=2)
+p.add_argument("--max_src",type=int,default=128)
+p.add_argument("--max_new",type=int,default=64)
+p.add_argument("--patience",type=int,default=3)
+a=p.parse_args()
+cmd=[sys.executable,"experiments/nmt/train_generic.py","--csv",a.csv,"--out",a.out,"--model","VietAI/vit5-base","--src_code","en_XX","--tgt_code","vi_VN","--epochs",str(a.epochs),"--lr",str(a.lr),"--warmup",str(a.warmup),"--grad_accum",str(a.grad_accum),"--train_bs",str(a.train_bs),"--eval_bs",str(a.eval_bs),"--max_src",str(a.max_src),"--max_new",str(a.max_new),"--patience",str(a.patience)]
+subprocess.run(cmd,check=True)

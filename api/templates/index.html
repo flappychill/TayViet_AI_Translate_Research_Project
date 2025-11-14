@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tày ↔ Việt</title>
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<div class="brand">Tày ↔ Việt</div>
+<nav class="nav"></nav>
+</header>
+<main class="main">
+<section class="panel">
+<div class="row">
+<select id="direction">
+<option value="tay2vi">Tày → Việt</option>
+<option value="vi2tay">Việt → Tày</option>
+</select>
+</div>
+<textarea id="src" placeholder="Nhập văn bản"></textarea>
+<button id="go">Dịch</button>
+<div id="out" class="out"></div>
+</section>
+<section class="about">
+<h2>Giới thiệu</h2>
+<p>Dịch hai chiều Tày và Việt bằng mô hình seq2seq.</p>
+</section>
+</main>
+<footer class="foot">
+<div>© 2025</div>
+</footer>
+</div>
+<script src="/static/js/app.js"></script>
+</body>
+</html>

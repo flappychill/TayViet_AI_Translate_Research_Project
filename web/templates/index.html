@@ -1,0 +1,21 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tay → Vietnamese</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="wrap">
+<h1>Tay → Vietnamese</h1>
+<form method="post">
+<textarea name="text" rows="6" placeholder="Nhập câu tiếng Tày"></textarea>
+<button type="submit">Dịch</button>
+</form>
+{% if output %}
+<div class="out">{{ output }}</div>
+{% endif %}
+</div>
+</body>
+</html>

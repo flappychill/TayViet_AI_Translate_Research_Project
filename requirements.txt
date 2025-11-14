@@ -1,0 +1,13 @@
+flask==3.0.3
+gunicorn==21.2.0
+transformers==4.45.2
+accelerate==0.33.0
+torch
+sentencepiece
+sacrebleu
+evaluate
+pandas
+numpy
+scikit-learn
+nltk
+uvicorn
