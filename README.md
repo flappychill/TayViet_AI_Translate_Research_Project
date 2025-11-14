@@ -449,5 +449,6 @@ gunicorn -w 2 -b 0.0.0.0:8000 web.app:app
 ---
 
 **Project Repository:** https://github.com/flappychill/TayViet_AI_Translate_Research_Project  
-**Lead Researchers:** Lê Trường Minh Đăng, Thiều Quang Tâm  
-**Advisor:** ThS. Nguyễn Khánh Lợi (HCMUT EE Machine Learning & IoT Lab)
+**Lead Researchers:** Lê Trường Minh Đăng
+**Team member**: Thiều Quang Tâm
+**Advisor:** Lab manager. Nguyễn Khánh Lợi and other mentors (HCMUT EE Machine Learning & IoT Lab - University of Technology, Vietnam National University - Ho Chi Minh)
